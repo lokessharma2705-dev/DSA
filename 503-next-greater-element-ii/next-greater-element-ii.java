@@ -1,14 +1,11 @@
 class Solution {
     public int[] nextGreaterElements(int[] nums) {
         int arr[]=new int[nums.length*2];
-        int y=0,x=0;
-        for(y=0;y<nums.length;y++){
-            arr[y]=nums[y];
+        for(int i=0;i<nums.length;i++){
+            arr[i]=nums[i];
+            arr[i+nums.length]=nums[i];
         }
-        for(int z=y;z<arr.length;z++){
-            arr[z]=nums[x];
-            x++;
-        }
+
         int ans[]=new int[nums.length];
         int j=arr.length-1;
         Stack<Integer> st=new Stack<>();
