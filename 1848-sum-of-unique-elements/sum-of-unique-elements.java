@@ -1,6 +1,6 @@
 class Solution {
     public int sumOfUnique(int[] nums) {
-        int arr[]=new int[1000];
+        int arr[]=new int[500];
         for(int i=0;i<nums.length;i++){
             arr[nums[i]]++;
         }
